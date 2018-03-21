@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shapepane:TCDPreviewPaneAS xmlns:mx="http://www.adobe.com/2006/mxml"
+							xmlns:shapepane="com.print.bean.shape.shapepane.*"
+							width="100%" height="100%" creationComplete="{init(this)}"
+							horizontalScrollPolicy="off" verticalScrollPolicy="off">
+	<mx:Script>
+		<![CDATA[
+			import com.print.util.ResourceUtil;
+		]]>
+	</mx:Script>
+	<mx:VBox width="100%" height="100%" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+		<mx:HBox width="100%" height="50" verticalAlign="middle">
+			<mx:LinkButton click="{slider.value =slider.value + 0.1; }"
+						   icon="{ResourceUtil.ZOOMIN_ICON}" toolTip="放大"/>
+			<mx:LinkButton click="{slider.value =slider.value - 0.1; }"
+						   icon="{ResourceUtil.ZOOMOUT_ICON}" toolTip="缩小"/>
+			<mx:LinkButton click="{zoomBackHandle()}" icon="{ResourceUtil.ZOOMBACK_ICON}"
+						   toolTip="还原"/>
+			<mx:HSlider id="slider" width="100%" labels="[0.5,1,1.5,2,2.5,3,3.5,4,4.5,5]"
+						liveDragging="true" maximum="5" minimum="0.5" snapInterval="0.1"/>
+		</mx:HBox>
+		<mx:Canvas width="100%" height="100%" horizontalScrollPolicy="off" verticalScrollPolicy="off">
+			<shapepane:PreviewPane id="previewPanel" x="0" y="0" width="100%" height="100%"
+								   horizontalScrollPolicy="off" scaleX="{slider.value }"
+								   scaleY="{slider.value }" verticalScrollPolicy="off">
+			</shapepane:PreviewPane>
+		</mx:Canvas>
+	</mx:VBox>
+</shapepane:TCDPreviewPaneAS>

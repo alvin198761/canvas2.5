@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<gui:LinePaneAs xmlns:mx="http://www.adobe.com/2006/mxml"
+				xmlns:gui="com.print.comp.*"
+				xmlns:btn="com.print.comp.btn.*"
+				xmlns:image="com.print.comp.image.*"
+				width="400" height="300" layout="absolute" title="连线">
+	<mx:Script>
+		<![CDATA[
+			import com.print.bean.shape.ShapeTypeHelper;
+			import com.print.event.LineShapeButtonEvent;
+		]]>
+	</mx:Script>
+	<mx:VBox x="0" y="0" width="100%" height="100%">
+		<mx:HBox width="100%" horizontalGap="3" paddingTop="10">
+			<image:ImageIconButton id="lineBtn" width="50%"
+								   click="{createLineAction(event,LineShapeButtonEvent.LINESHAPE,ShapeTypeHelper.TYPE_LINE)}"
+								   disAbleIcon="images/line.jpg" toolTip="直线">
+			</image:ImageIconButton>
+			<image:ImageIconButton id="vLitoolTip" width="50%"
+								   click="{createLineAction(event,LineShapeButtonEvent.HLINESHAPE,ShapeTypeHelper.TYPE_HFOLDLINE)}"
+								   disAbleIcon="images/hfoldLine.jpg" toolTip="垂直折线"
+								   useHandCursor="true">
+			</image:ImageIconButton>
+		</mx:HBox>
+		<mx:HBox width="100%" horizontalGap="3" paddingTop="10">
+			<image:ImageIconButton id="hLineBtn" width="50%"
+								   click="{createLineAction(event,LineShapeButtonEvent.VLINEHAPE,ShapeTypeHelper.TYPE_VFOLDLINE)}"
+								   disAbleIcon="images/vfoldLine.jpg" toolTip="水平折线"
+								   useHandCursor="true">
+			</image:ImageIconButton>
+		</mx:HBox>
+	</mx:VBox>
+</gui:LinePaneAs>

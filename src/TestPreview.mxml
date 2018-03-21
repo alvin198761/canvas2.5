@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:TitleWindow xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" showCloseButton="true" width="{Application.application.width*.8}" close="{PopUpManager.removePopUp(this)}" height="{Application.application.height*.8}" xmlns:shapepane="com.print.bean.shape.shapepane.*">
+	<mx:Script>
+		<![CDATA[
+			import mx.managers.PopUpManager;
+			import mx.core.Application;
+		]]>
+	</mx:Script>
+	<shapepane:TCDPreviewPane id="previewPane" width="100%" height="100%">
+	</shapepane:TCDPreviewPane>
+</mx:TitleWindow>

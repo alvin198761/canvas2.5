@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<comp:TCDToolBarAs xmlns:mx="http://www.adobe.com/2006/mxml"
+				   xmlns:comp="com.print.comp.*"
+				   xmlns:btn="com.print.comp.btn.*"
+				   xmlns:image="com.print.comp.image.*"
+				   width="100%" height="100%" creationComplete="{init(this)}" horizontalGap="5"
+				   paddingLeft="10" verticalGap="5">
+	<mx:HBox width="100%" backgroundColor="#E3E3E3" horizontalGap="5" verticalAlign="middle">
+		<mx:ApplicationControlBar horizontalAlign="center" horizontalGap="5">
+			<image:ImageIconButton id="newBtn" width="24" click="{newCanvas(event)}"
+								   disAbleIcon="images/toolbar/new.gif" enabled="true"
+								   enableIcon="images/toolbar/copy_1.gif" toolTip="新建"/>
+			<image:ImageIconButton id="openBtn" width="24" click="{openFile(event)}"
+								   disAbleIcon="images/toolbar/open.gif" enabled="true"
+								   enableIcon="images/toolbar/open_1.gif" toolTip="打开"/>
+			<image:ImageIconButton id="saveBtn" width="24" click="{saveFile(event)}"
+								   disAbleIcon="images/toolbar/save.gif" enabled="false"
+								   enableIcon="images/toolbar/save_1.gif" toolTip="保存"/>
+			<mx:VRule height="30">
+			</mx:VRule>
+			<mx:ComboBox id="scaleCombobox" dataProvider="{scaleList}" selectedIndex="2" toolTip="缩放">
+			</mx:ComboBox>
+			<image:ImageIconButton id="resetDefaultCursorBtn" width="24"
+								   click="{resetDefaultCursor(event)}"
+								   disAbleIcon="images/toolbar/mouse.gif" enabled="true"
+								   enableIcon="images/toolbar/mouse_1.gif" toolTip="默认鼠标"/>
+			<mx:VRule height="30">
+			</mx:VRule>
+			<image:ImageIconButton id="copyBtn" width="24" click="{copy(event)}"
+								   disAbleIcon="images/toolbar/copy.gif" enabled="false"
+								   enableIcon="images/toolbar/copy_1.gif" toolTip="复制"/>
+			<image:ImageIconButton id="pasteBtn" width="24" click="{paste(event)}"
+								   disAbleIcon="images/toolbar/paste.gif" enabled="false"
+								   enableIcon="images/toolbar/paste_1.gif" toolTip="粘贴"/>
+			<image:ImageIconButton id="cutBtn" width="24" click="{cut(event)}"
+								   disAbleIcon="images/toolbar/cut.gif" enabled="false"
+								   enableIcon="images/toolbar/cut_1.gif" toolTip="剪切"/>
+			<mx:VRule height="30">
+			</mx:VRule>
+			<image:ImageIconButton id="undoBtn" width="24" click="{undo(event)}"
+								   disAbleIcon="images/toolbar/undo.png" enabled="false"
+								   enableIcon="images/toolbar/undo_1.png" toolTip="撤销"/>
+			<image:ImageIconButton id="redoBtn" width="24" click="{redo(event)}"
+								   disAbleIcon="images/toolbar/redo.png" enabled="false"
+								   enableIcon="images/toolbar/redo_1.png" toolTip="恢复"/>
+			<mx:VRule height="30">
+			</mx:VRule>
+			<image:ImageIconButton id="deleteSelectBtn" width="24" click="{deleteShape(event)}"
+								   disAbleIcon="images/toolbar/delete.png" enabled="false"
+								   enableIcon="images/toolbar/delete_1.png" toolTip="删除"/>
+			<mx:LinkButton id="selectAllBtn" label="全选" click="{selectAll(event)}" enabled="true">
+			</mx:LinkButton>
+			<!--<image:ImageIconButton id="exitBtn" width="24" click="{exit(event)}"
+								   disAbleIcon="images/toolbar/back.gif" enabled="true"
+								   enableIcon="images/toolbar/back_1.gif" toolTip="退出" visible="false"/>-->
+		</mx:ApplicationControlBar>
+	</mx:HBox>
+</comp:TCDToolBarAs>

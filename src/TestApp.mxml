@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute">
+	<mx:Script>
+		<![CDATA[
+			import com.user.LoginDialog;
+			import mx.managers.PopUpManager;
+			
+	private function testClick():void{
+				PopUpManager.createPopUp(this,LoginDialog,true,null);
+			}
+			]]>
+	</mx:Script>
+	<mx:Button label="点击" click="{testClick()}">
+		
+	</mx:Button>
+</mx:Application>

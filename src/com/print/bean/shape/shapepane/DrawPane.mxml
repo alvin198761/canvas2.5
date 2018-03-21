@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shapepane:DrawPaneAs xmlns:mx="http://www.adobe.com/2006/mxml"
+					  xmlns:comp="com.print.comp.*"
+					  xmlns:shapepane="com.print.bean.shape.shapepane.*"
+					  width="400" height="300" creationComplete="{init(this)}">
+</shapepane:DrawPaneAs>

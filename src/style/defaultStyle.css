@@ -1,0 +1,101 @@
+/* CSS file */
+
+/*------------------------------------------------------------------------------ Fonts */
+
+Application
+{
+	fontFamily: 宋体;
+	fontSize:12;
+	backgroundColor:#ffffff
+}
+/*GraphStage
+{
+	borderSkin: ClassReference("com.ultra.transactionline.skins.GridSkin");
+}*/
+
+.alertTitle
+{
+	color:#ffffff;
+	fontWeight:bold;
+}
+
+Alert
+{
+	backgroundColor:#E3E3E3;
+	backgroundAlpha: 0.8;
+	color: #323232;
+	borderColor: #A3A3A3;
+	borderAlpha: 0.7;
+	headerHeight:20;
+	themeColor: #848484;
+	titleStyleName:alertTitle;
+}
+
+TextArea
+{
+	backgroundImage:'../src/com/ultra/transactionline/component/assets/images/bg.png';
+	verticalAlign:middle;
+	textAlign:center;
+	fontWeight:bold;
+	leading:3;
+	backgroundSize:'100%'
+}
+
+Panel
+{
+	cornerRadius:0;
+	borderStyle:none;
+	verticalScrollPolicy:off;
+	horizontalScrollPolicy:off;
+	headerHeight:20;
+	headerColors:#6699cc,#6699cc;
+}
+
+VBox
+{
+	borderStyle:none;
+	cornerRadius:0;
+	horizontalGap:0;
+	verticalGap:0;
+	verticalScrollPolicy:off;
+	horizontalScrollPolicy:off;
+}
+
+HBox
+{
+	borderStyle:none;
+	cornerRadius:0;
+	horizontalGap:0;
+	verticalGap:0;
+	verticalScrollPolicy:off;
+	horizontalScrollPolicy:off;
+}
+
+Box
+{
+	borderStyle:none;
+	cornerRadius:0;
+	horizontalGap:0;
+	verticalGap:0;
+	verticalScrollPolicy:off;
+	horizontalScrollPolicy:off;
+}
+
+VDividedBox
+{
+	verticalScrollPolicy:off;
+	horizontalScrollPolicy:off;
+}
+HDividedBox
+{
+	verticalScrollPolicy:off;
+	horizontalScrollPolicy:off;
+}
+
+OperateBox{
+	backgroundColor:#c0d6eb;
+}
+
+TCDToolBar{
+	backgroundColor:#ffffff;
+}

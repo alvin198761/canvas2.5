@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LoginDialogAs xmlns="com.user.*" xmlns:mx="http://www.adobe.com/2006/mxml" width="400" height="300">
+		<mx:Form width="100%">
+			<mx:FormHeading label="用户登录">
+				
+			</mx:FormHeading>
+			<mx:FormItem label="用户名">
+				<mx:TextInput>
+					
+				</mx:TextInput>
+			</mx:FormItem>
+			<mx:FormItem label="密码">
+				<mx:TextInput>
+					
+				</mx:TextInput>
+			</mx:FormItem>
+		</mx:Form>
+</LoginDialogAs>

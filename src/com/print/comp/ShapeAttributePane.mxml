@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<comp:ShapeAttributePaneAs xmlns:mx="http://www.adobe.com/2006/mxml"
+						   xmlns:comp="com.print.comp.*"
+						   creationComplete="{init(this)}" layout="absolute">
+	<mx:VBox id="attForm" x="0" y="0" width="100%" height="100%">
+		<mx:HBox width="100%" height="100%">
+			<mx:Label text="名称：">
+			</mx:Label>
+			<mx:TextArea id="shapeText" width="100%" keyDown="{keyAction(event)}"
+						 keyUp="{keyAction(event)}" textAlign="left">
+			</mx:TextArea>
+		</mx:HBox>
+	</mx:VBox>
+</comp:ShapeAttributePaneAs>

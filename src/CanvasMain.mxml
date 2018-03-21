@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mx:Application  xmlns:mx="http://www.adobe.com/2006/mxml" layout="absolute" minWidth="955" minHeight="600" xmlns:local="*">
+	<mx:Style source="style/defaultStyle.css">
+	</mx:Style>
+	<local:DrawModle width="100%" height="100%">
+		
+	</local:DrawModle> 
+</mx:Application>

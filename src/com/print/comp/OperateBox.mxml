@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<comp:OperateBoxAs xmlns:mx="http://www.adobe.com/2006/mxml"
+				   xmlns:comp="com.print.comp.*"
+				   xmlns:shapepane="com.print.bean.shape.shapepane.*"
+				   width="400" height="300" creationComplete="{init(this)}">
+	<mx:VDividedBox id="mainBox" width="100%" height="100%" resizeToContent="false">
+		<comp:TCDToolBar id="toolBar" width="100%" height="60" drawPane="{drawPane}">
+		</comp:TCDToolBar>
+		<mx:Canvas width="100%" height="100%">
+			<mx:Box x="0" y="0" width="100%" height="100%" horizontalAlign="center"
+					horizontalScrollPolicy="off" verticalAlign="middle" verticalScrollPolicy="off">
+				<shapepane:DrawPane id="drawPane" width="800" height="1000" backgroundColor="#ffffff"
+									horizontalScrollPolicy="off"
+									scaleX="{toolBar.scaleCombobox.selectedItem.value}"
+									scaleY="{toolBar.scaleCombobox.selectedItem.value}"
+									scaleZ="{toolBar.scaleCombobox.selectedItem.value}"
+									verticalScrollPolicy="off">
+				</shapepane:DrawPane>
+			</mx:Box>
+		</mx:Canvas>
+	</mx:VDividedBox>
+</comp:OperateBoxAs>
